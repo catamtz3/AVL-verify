@@ -5,15 +5,15 @@
 Clone this repo, edit it locally, and push and upload to Gradescope, exactly as in P1. You should use Java 11 when
 working on this.
 
-You should only edit `verifyavl.VerifyAVL.java` and do not change the method signature. Though, feel free to add private
+You should only edit `VerifyAVL.java` and do not change the method signature. Though, feel free to add private
 methods as you see fit.
 
 ## The assignment
 
 Write Java code for an Θ(n) worst-case algorithm that verifies that a tree is actually an AVL tree
-in `src/main/java/verifyavl.VerifyAVL.java`.
+in `VerifyAVL.java`.
 
-You may assume the nodes of the tree have the following definition given in `src/main/java/verifyavl/AVLNode.java`.
+You may assume the nodes of the tree have the following definition given in `AVLNode.java`.
 
 You must verify the BST Property, the AVL Balance Condition, and the correctness of the height information. If it
 fails *any* of these properties, return `false`. Otherwise, return `true`.
@@ -28,8 +28,8 @@ points you can get require that your code works without question.
 
 ## Testing
 
-We've given you a testing harness in `src/test/java/VerifyAVLTests.java`. It reads in `tests.json` and tests your
-verifyavl.VerifyAVL method on the given tree.
+We've given you a testing harness in `VerifyAVLTests.java`. It reads in `tests.json` and tests your
+VerifyAVL method on the given tree.
 
 The `tests.json` file contains as many test cases as you wish to add, where each case is on a separate line with the
 following format:
@@ -52,7 +52,3 @@ We have provided you with 4 basic test cases:
 - A tree that violates the AVL balance
   property: `[2,3,[1,0,null,null],[4,2,[3,0,null,null],[5,1,null,[6,0,null,null]]]]`
   ![Incorrect AVL](./img/avl.png)
-
-**Note: You should add as many test cases as you need to convince yourself that your solution works. Think about edge
-cases! Your tests will not be graded, but if your code does not work, testing will help you find the problems before we
-grade it.** 
