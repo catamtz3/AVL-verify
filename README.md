@@ -2,7 +2,7 @@
 
 ## Setting up
 
-Clone this repo, edit it locally, and push and upload to Gradescope, exactly as in P1. You should use Java 11 when
+Clone this repo, edit it locally, and push and submit to Gradescope, exactly as in P1. You should use Java 11 when
 working on this.
 
 You should only edit `VerifyAVL.java` and do not change the method signature. Though, feel free to add private
@@ -10,20 +10,24 @@ methods as you see fit.
 
 ## The assignment
 
-Write Java code for an Θ(n) worst-case algorithm that verifies that a tree is actually an AVL tree
+Write Java code for an $`\Theta(n)`$ worst-case algorithm that verifies that a tree is actually an AVL tree
 in `VerifyAVL.java`.
 
 You may assume the nodes of the tree have the following definition given in `AVLNode.java`.
 
-You must verify the BST Property, the AVL Balance Condition, and the correctness of the height information. If it
-fails *any* of these properties, return `false`. Otherwise, return `true`.
+When examining a tree, you must verify:
+- the BST Property
+- the AVL Balance Condition
+- the correctness of the height information.
+
+If it fails *any* of these properties, return `false`. Otherwise, return `true`.
 
 You can assume that the keys and heights will not exceed `Integer.MAX_VALUE`.
 
 ## Grading
 
-We will be running an autograder with **many hidden test cases** to grade your submission. You will receive points for
-each test case you pass. The points will be weighted more heavily on our stress tests, so note that the majority of the
+We will be running an autograder to grade your submission. All the tests are public, so your final grade on Gradescope will be
+what goes into the gradebook. The points will be weighted more heavily on our stress tests, so note that the majority of the
 points you can get require that your code works without question.
 
 ## Testing
