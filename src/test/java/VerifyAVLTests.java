@@ -13,6 +13,10 @@ import static org.junit.Assert.*;
 
 
 public class VerifyAVLTests {
+
+    /***
+     * Run this to test every tree in the json
+     */
     @Test
     public void verifyAVLTest() throws IOException, ParseException {
         // Parse the tests.json file as a json object
