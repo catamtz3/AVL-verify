@@ -9,7 +9,6 @@ public class AVLNode {
     public int key; // The data element stored at this node.
     public int height;
 
-
     public AVLNode(int key, int height, AVLNode left, AVLNode right) {
         this.key = key;
         this.height = height;
