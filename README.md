@@ -23,7 +23,7 @@ You can assume that the keys and heights will not exceed `Integer.MAX_VALUE`.
 
 ## Grading
 
-We will be running an autograder to grade your submission. All the tests are public, so your final grade on Gradescope will be what goes into the gradebook. The points will be weighted more heavily on our stress tests, so note that the majority of the points you can get require that your code works without question.
+We will be running an autograder to grade your submission. All the tests are visible, so your final grade on Gradescope will be what goes into the gradebook. The points will be weighted more heavily on our stress tests, so note that the majority of the points you can get require that your code works without question.
 
 ## Testing
 
@@ -35,6 +35,9 @@ following format:
 
 Note that the array representation of an verifyavl.AVLNode is as follows:
 `[int key, int height, [verifyavl.AVLNode left], [verifyavl.AVLNode right]]`
+Note that this representation is recursive i.e. `verifyavl.AVLNode left` and `verifyavl.AVLNode right` is another `verifyavl.AVLNode`
+
+e.g. `[int key, int height, [int key, int height, [verifyavl.AVLNode left], [verifyavl.AVLNode right]], [int key, int height, [verifyavl.AVLNode left], [verifyavl.AVLNode right]]]`
 
 So the example above is of a tree with a root node with key 5, a left child node with a key 2, and a right child node with a key 6.
 
