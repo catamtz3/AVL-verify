@@ -33,7 +33,7 @@ The `tests.json` file contains as many test cases as you wish to add, where each
 following format:
 `{"answer": true, "tree": [5,1,[2,0,null,null], [6,0,null,null]]}`
 
-Note that the array representation of an verifyavl.AVLNode is as follows:
+Note that the array representation of an `verifyavl.AVLNode` is as follows:
 `[int key, int height, [verifyavl.AVLNode left], [verifyavl.AVLNode right]]`
 Note that this representation is recursive i.e. `verifyavl.AVLNode left` and `verifyavl.AVLNode right` is another `verifyavl.AVLNode`
 
