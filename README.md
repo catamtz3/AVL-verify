@@ -25,6 +25,8 @@ You can assume that the keys and heights will not exceed `Integer.MAX_VALUE`.
 
 We will be running an autograder to grade your submission. All the tests are visible, so your final grade on Gradescope will be what goes into the gradebook. The points will be weighted more heavily on our stress tests, so note that the majority of the points you can get require that your code works without question.
 
+As a motivation for you to get this assignment 100% correct, your Verify AVL code will be used to guarantee a correct implementation for `AVLTree` in P2.
+
 ## Testing
 
 We've given you a testing harness in `VerifyAVLTests.java`. It reads in `tests.json` and tests your VerifyAVL method on the given tree.
