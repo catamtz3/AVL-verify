@@ -48,11 +48,14 @@ with a key 6.
 We have provided you with 4 basic test cases:
 
 - A correct AVL tree: `[5,1,[2,0,null,null], [6,0,null,null]]`
+
   ![Correct AVL](./img/correct.png)
 - A tree that violates the BST property: `[1,1,[2,0,null,null],null]`
+
   ![Incorrect BST](./img/bst.png)
 - A tree with incorrect height labels: `[2,1,[1,0,null,null],[4,1,[3,0,null,null],null]]`
+
   ![Incorrect heights](./img/height.png)
-- A tree that violates the AVL balance
-  property: `[2,3,[1,0,null,null],[4,2,[3,0,null,null],[5,1,null,[6,0,null,null]]]]`
+- A tree that violates the AVL balance property: `[2,3,[1,0,null,null],[4,2,[3,0,null,null],[5,1,null,[6,0,null,null]]]]`
+
   ![Incorrect AVL](./img/avl.png)
