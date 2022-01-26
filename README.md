@@ -2,7 +2,7 @@
 
 ## Setting up
 
-Clone your student repo, edit it locally, commit and push to GitLab, and submit to Gradescope, exactly as in P1. You should use Java 11 when working on this.
+Clone your student repo, edit it locally, commit and push to GitLab, and submit to Gradescope, exactly as in P1. When working on this, you should use Java 11 by changing your [Project SDK](https://www.jetbrains.com/help/idea/project-settings-and-structure.html#project-sdk) and [Project Language Level](https://www.jetbrains.com/help/idea/project-settings-and-structure.html#language-level) in the Project Structure of IntelliJ.
 
 You should only edit `VerifyAVL.java` and do not change the method signature. Though, feel free to add private methods as you see fit.
 
