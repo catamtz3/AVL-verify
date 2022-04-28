@@ -22,6 +22,9 @@ public class VerifyAVL {
             if (root.left != null) {
                 leftHeight = root.left.height;
             }
+            if (root.height != (1+Math.max(root.left != null ? root.height: -1,root.right != null ? root.height: -1)){
+                return false;
+            }
             root.height = Math.max(leftHeight, rightHeight) + 1;
             return Math.abs(leftHeight - rightHeight) <= 1;
         }
