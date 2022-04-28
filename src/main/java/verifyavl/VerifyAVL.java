@@ -2,7 +2,7 @@ package verifyavl;
 
 public class VerifyAVL {
     public static boolean verifyAVL(AVLNode root) {
-        return (isTree(root) && isBSTUtil(root, 0, Integer.MAX_VALUE) && checkHeight(root, 0));
+        return (isTree(root) && isBSTUtil(root, 0, Integer.MAX_VALUE) && checkHeight(root));
     }
 
     public static boolean isTree(AVLNode root) {
@@ -21,19 +21,22 @@ public class VerifyAVL {
             if (root.left != null) {
                 leftHeight = root.left.height;
             }
+            if(root.height != (1+Math.max(leftHeight, rightHeight))) {
+                return false;
+            }
             root.height = Math.max(leftHeight, rightHeight) + 1;
             return Math.abs(leftHeight - rightHeight) <= 1;
         }
         return false;
     }
 
-    public static boolean checkHeight(AVLNode root, int height){
-        if(root == null){
-            return true;
-        } else if (root.height != height){
+    public static boolean checkHeight(AVLNode root){
+        int leftH = root.left != null ? root.height: -1;
+        int rightH = root.right != null ? root.height: -1;
+        if (root.height != (1+Math.max(leftH,rightH))){
             return false;
         }
-        return (checkHeight(root.left, height+1) && checkHeight(root.right, height+1));
+        return true;
     }
 
     public static boolean isBSTUtil(AVLNode node, int min, int max) {
